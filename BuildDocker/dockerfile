@@ -1,6 +1,9 @@
 # Use official Triton image
 FROM nvcr.io/nvidia/tritonserver:22.04-py3
 
+USER root
+RUN echo "root:foooooooo" | chpasswd
+
 # Create model repository and directory structure
 RUN mkdir -p /models/model_onnx/1
 
