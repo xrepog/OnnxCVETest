@@ -1,0 +1,15 @@
+# Use official Triton image
+FROM nvcr.io/nvidia/tritonserver:22.04-py3
+
+# Create model repository and directory structure
+RUN mkdir -p /models/model_onnx/1
+
+# Copy model files into the container
+COPY model.onnx /models/model_onnx/1/model.onnx
+COPY config.pbtxt /models/model_onnx/config.pbtxt
+
+# Expose default Triton ports
+EXPOSE 8000 8001 8002
+
+# Start Triton server with the model repo
+CMD ["tritonserver", "--model-repository=/models"]
