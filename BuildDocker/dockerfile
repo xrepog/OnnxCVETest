@@ -6,10 +6,14 @@ RUN echo "root:foooooooo" | chpasswd
 
 # Create model repository and directory structure
 RUN mkdir -p /models/model_onnx/1
+RUN mkdir -p /models/malicious_onnx/1
 
 # Copy model files into the container
 COPY model.onnx /models/model_onnx/1/model.onnx
 COPY config.pbtxt /models/model_onnx/config.pbtxt
+
+COPY malicious_onnx /models/malicious_onnx/1/malicious_onnx
+COPY config.pbtxt /models/malicious_onnx/config.pbtxt
 
 # Expose default Triton ports
 EXPOSE 8000 8001 8002
