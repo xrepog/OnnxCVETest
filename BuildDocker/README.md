@@ -9,7 +9,7 @@ docker run --rm -p8000:8000 -p8001:8001 -p8002:8002 test-ort-triton &
 ![image](running%20triton.png)
 # Run shell script. 
 ## Using chmod to give permission before running.
-./testORT.sh
+./ortTest.sh
 
 
 
