@@ -13,6 +13,8 @@ docker run --name ort_test --rm -p8000:8000 test-ort-triton &
 ./ortTest.sh
 
 
+# Triton API Defination
+https://github.com/kserve/kserve/blob/master/docs/predict-api/v2/required_api.md
 
 
 
