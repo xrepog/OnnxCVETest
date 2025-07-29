@@ -4,7 +4,8 @@ This onnxruntime test is under Triton server, testing the onnxruntime within the
 docker build -t test-ort-triton .
 
 # Run it with ports exposed
-docker run --rm -p8000:8000 -p8001:8001 -p8002:8002 test-ort-triton &
+# Name the container with 'ort_test'
+docker run --name ort_test --rm -p8000:8000 test-ort-triton &
 ## See sth like below means start the triton server succefully
 ![image](running%20triton.png)
 # Run shell script. 
