@@ -11,8 +11,11 @@ docker run --name ort_test --rm -p8000:8000 test-ort-triton &
 ![image](running%20triton.png)
 
 # Run shell script
-(Using chmod to give permission before running)  
-./ortTest.sh
+## Get output data
+sh ortTest.sh  
+(The output data will store in result_ort.json)
+## Convert the data to string
+sh convert_data_toString.sh
 
 
 # Triton API Defination
