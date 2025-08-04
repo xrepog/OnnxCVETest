@@ -23,5 +23,5 @@ curl -X POST localhost:8000/v2/models/malicious_onnx/infer   -H "Content-Type: a
     "outputs": [
       { "name": "Y" }
     ]
-  }' | jq . > result.json
+  }' | jq . > result_ort.json
 
