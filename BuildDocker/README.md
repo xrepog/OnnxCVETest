@@ -7,7 +7,7 @@ docker build -t test-ort-triton .
 (Name the container with 'ort_test')  
 docker run --name ort_test --rm -p8000:8000 test-ort-triton &
 
-# See sth like below means start the triton server succefully
+## See sth like below means start the triton server succefully
 ![image](running%20triton.png)
 
 # Run shell script
