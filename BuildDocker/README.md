@@ -12,7 +12,7 @@ docker run --name ort_test --rm -p8000:8000 test-ort-triton &
 
 # Run shell script
 ## Get output data
-sh ortTest.sh  
+sh ort_output.sh  
 (The output data will store in result_ort.json)
 ## Convert the data to string
 sh convert_data_toString.sh
