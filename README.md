@@ -1,4 +1,4 @@
-This repo is the proof of exploit for onnxruntime CVE
+This repo is the proof of exploit for onnxruntime CVE  
 Exploit is under Triton server, testing the onnxruntime within the Triton
 
 # Build Docker
@@ -12,7 +12,7 @@ docker run --name ort_test --rm -p8000:8000 test-ort-triton &
 ![image](running%20triton.png)
 
 # Run python script
-(Assuming python is installed)
+(Assuming python is installed)  
 python/python3 ortProfExploit.py
 
 # Triton API Defination
