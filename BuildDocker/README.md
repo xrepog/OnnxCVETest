@@ -7,12 +7,12 @@ docker build -t test-ort-triton .
 (Name the container with 'ort_test')  
 docker run --name ort_test --rm -p8000:8000 test-ort-triton &
 
-# See sth like below means start the triton server succefully
+## See sth like below means start the triton server succefully
 ![image](running%20triton.png)
 
 # Run shell script
 ## Get output data
-sh ortTest.sh  
+sh ort_output.sh  
 (The output data will store in result_ort.json)
 ## Convert the data to string
 sh convert_data_toString.sh
