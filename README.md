@@ -1,7 +1,7 @@
 This repo is the proof of exploit for onnxruntime CVE
 Exploit is under Triton server, testing the onnxruntime within the Triton
 
-# Build Triton container
+# Build Docker
 docker build -t test-ort-triton .
 
 # Run it with ports exposed
